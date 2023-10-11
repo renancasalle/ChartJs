@@ -45,6 +45,24 @@
       }
     ]
     };
+
+    // grafico 2
+    const data2 = { 
+      labels: labels,
+      datasets: [{
+        label: 'Temperatura',
+        backgroundColor: 'rgb(0, 0, 255)',
+        borderColor: 'rgb(0, 99, 255)',
+        data: [22, 24, 27, 23, 20, 18],
+      },
+
+      {
+        label: 'Umidade',
+        backgroundColor: 'rgb(255, 255, 0)',
+        borderColor: 'rgb(255, 255, 0)',
+        data: [90, 89, 93, 87, 88, 8],
+     }]
+    };
   
     const config = {
       type: 'line',
@@ -64,4 +82,9 @@
       document.getElementById('myChart'),
       config
     );
+
+    const myChart2 = new Chart(
+     document.getElementById('myChart2'),
+      config2
+   );
   </script>
